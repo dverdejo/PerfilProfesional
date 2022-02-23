@@ -1,0 +1,301 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url(Imagenes/v661-tk-16-watercolorpattern.jpg);
+  background-size: contain;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+section {
+  width: 800px;
+  margin: 20px auto 0;
+  padding: 10px 15px;
+  border: 1px solid #d4e7ff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 16px 1px #bdd0e9;
+  text-align: center;
+  background-color: #fde3df;
+}
+
+section a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #5a79a1;
+}
+
+.image, .about, .skills .skill-list {
+  display: inline-block;
+}
+
+.image {
+  width: 260px;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.image img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 16px 1px #5a79a1;
+  /* box-shadow: 10px 5px 5px black; */
+}
+
+/*------------------SECTION 1-----------------------*/
+
+.about {
+  width: 460px;
+  padding: 38px 15px;
+  vertical-align: top;
+}
+
+/*------------------SECTION 2-----------------------*/
+
+#instagram {
+  display: inline-flex;
+}
+
+#instagram a {
+  padding: 10px;
+}
+
+.more img:last-child {
+  padding: 10px;
+  padding-bottom: 15px;
+  width: 350px;
+  border-radius: 30px;
+}
+
+/*------------------SECTION 3-----------------------*/
+.skills h2 {
+  margin: 10px;
+}
+
+.skills div.skill-list {
+  vertical-align: top;
+  margin: 0 30px;
+}
+
+.skill-list ul {
+  text-align: left;
+}
+
+/*------------------SECTION 4-----------------------*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  display: block;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*------------------SECTION 5-----------------------*/
+
+.social h1 {
+  font-size: 30px;
+}
+
+.social img {
+  width: 25px;
+}
+
+.social ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social a {
+  font-size: 17px;
+  padding: 10px;
+  vertical-align: super;
+}
+
+section a:hover {
+  color: #ff007b;
+}
+
+.social ul li:first-child a:hover {
+  color: #0a66c2;
+}
+
+.social ul li:nth-child(2) a:hover {
+  color: #00acee;
+}
+
+
+@media (min-width: 576px) and (max-width: 800px) {
+  /* CSS para min-width: 576px */
+  section {
+    width: 90vw;
+  }
+
+  .image, .about {
+    display: block;
+  }
+
+  .image {
+    width: 100%;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .about {
+    width: auto;
+  }
+
+  .video-responsive {
+    width: auto;
+    margin: 0 15px 15px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* CSS para max-width: 575.98.px */
+  body {
+    font-size: 1.2em;
+  }
+
+  section {
+    width: 85vw;
+
+  }
+
+  h1, h2, h3  {
+    text-align: center;
+  }
+
+  .image, .about, .skills .skill-list {
+    display: block;
+  }
+
+  .image {
+    width: auto;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .about {
+    width: auto;
+  }
+
+  .video-responsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+    width: auto;
+    margin: 0 15px 15px;
+  }
+  .video-responsive iframe {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .skill-list:first-of-type {
+    margin-left: 30px !important;
+  }
+
+  .social ul li {
+    font-size: 1.3em;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+}
