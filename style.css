@@ -234,11 +234,6 @@ section a:hover {
   .about {
     width: auto;
   }
-
-  .video-responsive {
-    width: auto;
-    margin: 0 15px 15px;
-  }
 }
 
 @media (max-width: 575.98px) {
@@ -269,22 +264,9 @@ section a:hover {
   .about {
     width: auto;
   }
-
-  .video-responsive {
-    height: 0;
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    position: relative;
-    width: auto;
-    margin: 0 15px 15px;
-  }
-  .video-responsive iframe {
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
+  
+  .more img:last-child {
+    width: 300px;
   }
 
   .skill-list:first-of-type {
